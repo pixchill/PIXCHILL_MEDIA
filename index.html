@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Media</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Trang chủ</a></li>
+                <li><a href="#about">Về chúng tôi</a></li>
+                <li><a href="#services">Dịch vụ</a></li>
+                <li><a href="#portfolio">Dự án</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Chào mừng đến với Team Media</h1>
+        <p>Chúng tôi chuyên về Nhiếp ảnh, Quay phim và Sáng tạo nội dung.</p>
+        <img src="images/home-banner.jpg" alt="Banner của team media" class="banner-image">
+    </section>
+
+    <section id="about">
+        <h2>Về chúng tôi</h2>
+        <p>Chúng tôi là nhóm những người đam mê truyền thông, tận tụy ghi lại những khoảnh khắc đẹp và kể câu chuyện của bạn qua hình ảnh và nội dung sáng tạo.</p>
+    </section>
+
+    <!-- Dịch vụ với giá và chức năng nhấn -->
+    <section id="services">
+        <h2>Dịch vụ của chúng tôi</h2>
+        <ul>
+            <li><a href="#" onclick="showPrice('Nhiếp ảnh', '3,000,000 VND')">Nhiếp ảnh</a></li>
+            <li><a href="#" onclick="showPrice('Quay phim', '5,000,000 VND')">Quay phim</a></li>
+            <li><a href="#" onclick="showPrice('Viết nội dung', '2,500,000 VND')">Viết nội dung</a></li>
+            <li><a href="#" onclick="showPrice('Chỉnh sửa và hậu kỳ', '4,000,000 VND')">Chỉnh sửa và hậu kỳ</a></li>
+        </ul>
+        <p id="service-price" style="font-weight: bold; color: green;"></p>
+    </section>
+
+    <section id="portfolio">
+        <h2>Dự án</h2>
+        <div class="gallery">
+            <img src="images/project1.jpg" alt="Dự án 1">
+            <img src="images/project2.jpg" alt="Dự án 2">
+            <img src="images/project3.jpg" alt="Dự án 3">
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Liên hệ với chúng tôi</h2>
+        <form id="contactForm">
+            <input type="text" name="name" placeholder="Tên của bạn" required>
+            <input type="email" name="email" placeholder="Email của bạn" required>
+            <textarea name="message" placeholder="Tin nhắn của bạn" required></textarea>
+            <button type="submit">Gửi</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Team Media. Bảo lưu mọi quyền.</p>
+        <img src="images/footer-logo.png" alt="Logo của team" class="footer-logo">
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
